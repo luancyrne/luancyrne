@@ -44,8 +44,8 @@
 ```javascript
 import Current from "Job";
 
-var Company = "Qualicorp";
-var Occupation = "Web Development Analyst";
+var Company = null;
+var Occupation = "Open To Work";
 
 Current.Startjob(Company, Occupation, "Remote");
 ```
