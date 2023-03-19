@@ -20,7 +20,7 @@
   <img align="center" alt="LuanC-PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
   <img align="center" alt="LuanC-Msql" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white">
   <img align="center" alt="LuanC-Msql" src="https://img.shields.io/badge/Mongodb-00000F?style=for-the-badge&logo=mongodb&logoColor=white">
-  <img align="center" alt="LuanC-Msql" src="https://img.shields.io/badge/Mongodb-00000F?style=for-the-badge&logo=mongodb&logoColor=white">
+  <img align="center" alt="LuanC-Msql" src="https://img.shields.io/badge/Socket.io-00000F?style=for-the-badge&logo=socket.io&logoColor=white">
 </div>
 
 ## 
