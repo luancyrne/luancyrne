@@ -48,7 +48,7 @@
 import Current from "Job";
 
 var Company = 'Minu.co';
-var Occupation = "Systems Analyst III";
+var Occupation = "Systems Analyst";
 
 Current.Startjob(Company, Occupation, "Remote");
 ```
