@@ -22,7 +22,8 @@
   <img align="center" alt="LuanC-Msql" src="https://img.shields.io/badge/Mongodb-FFF?style=for-the-badge&logo=mongodb&logoColor=green">
   <img align="center" alt="LuanC-Msql" src="https://img.shields.io/badge/Socket.io-00000F?style=for-the-badge&logo=socket.io&logoColor=white">
   <img align="center" alt="LuanC-Msql" src="https://img.shields.io/badge/ml5.js-9c5bfd?style=for-the-badge&logo=ml5.js&logoColor=white">
-  <img align="center" alt="LuanC-Msql" src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white">
+  <img align="center" alt="LuanC-Msql" src="https://camo.githubusercontent.com/a0711345e0b23df23f6f4ccdd95cb96651e061a0659544f1b76e17b1d8588cd4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7374726170692d2532333245374545412e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d737472617069266c6f676f436f6c6f723d7768697465">
+  
 </div>
 
 ## 
