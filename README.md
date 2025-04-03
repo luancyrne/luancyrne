@@ -50,9 +50,9 @@
 ```javascript
 import Current from "Job";
 
-var Company = 'Minu.co';
+var Company = 'undefined';
 var Occupation = "Systems Analyst";
 
-Current.Startjob(Company, Occupation, "Remote");
+Current.Startjob(Company, Occupation, "Freelancer");
 ```
 
