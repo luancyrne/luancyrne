@@ -2,11 +2,11 @@
 
 ### Hi, my name is Luan Cyrne 👋
 
-<div>
+<!-- <div>
   <a href="https://github.com/luancyrne">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=luancyrne&show_icons=true&theme=dark">
   <img height="180em" width="400px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=luancyrne&layout=compact&langs_count=16&theme=dark">
-</div>
+</div> -->
 
 <div style="display: inline_block"><br>
   <img align="center" alt="LuanC-HTML" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
