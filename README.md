@@ -1,58 +1,145 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+![Azul Header](https://placehold.co/800x120/0d6efd/ffffff/png?text=Luan+Cyrne+Vilela+-+Backend+Developer&font=roboto)
 
-### Hi, my name is Luan Cyrne 👋
+**Backend Developer** | Node.js | APIs (REST/GraphQL) | Kafka & Event-Driven | PostgreSQL/MongoDB | Testes (Mocha/Sinon)
 
-<!-- <div>
-  <a href="https://github.com/luancyrne">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=luancyrne&show_icons=true&theme=dark">
-  <img height="180em" width="400px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=luancyrne&layout=compact&langs_count=16&theme=dark">
-</div> -->
+📍 Itumbiara – GO, Brasil   
+🔗 [LinkedIn](https://linkedin.com/in/luancyrne)
 
-<div style="display: inline_block"><br>
-  <img align="center" alt="LuanC-HTML" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-  <img align="center" alt="LuanC-CSS" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <img align="center" alt="LuanC-JS"  src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-  <img align="center" alt="LuanC-NODEJS"  src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
-  <img align="center" alt="LuanC-REACTJS"  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-  <img align="center" alt="LuanC-ReactN" src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-  <img align="center" alt="LuanC-Redux" src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white">
-  <img align="center" alt="LuanC-Express" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge">
-  <img align="center" alt="LuanC-PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
-  <img align="center" alt="LuanC-Msql" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white">
-  <img align="center" alt="LuanC-Msql" src="https://img.shields.io/badge/Mongodb-FFF?style=for-the-badge&logo=mongodb&logoColor=green">
-  <img align="center" alt="LuanC-Msql" src="https://img.shields.io/badge/Socket.io-00000F?style=for-the-badge&logo=socket.io&logoColor=white">
-  <img align="center" alt="LuanC-Msql" src="https://img.shields.io/badge/ml5.js-9c5bfd?style=for-the-badge&logo=ml5.js&logoColor=white">
-  <img align="center" alt="LuanC-Msql" src="https://camo.githubusercontent.com/a0711345e0b23df23f6f4ccdd95cb96651e061a0659544f1b76e17b1d8588cd4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7374726170692d2532333245374545412e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d737472617069266c6f676f436f6c6f723d7768697465">
-  <img align="center" alt="LuanC-Msql" src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white">
-  
-</div>
+---
 
-## 
+## 🔵 Resumo Profissional
 
-### My contacts:
+Backend Developer com **+6 anos** de experiência em sistemas de produção que impactaram **+26 cidades**. Iniciei no suporte técnico, o que me ensinou a priorizar código que resolve problemas reais e gera valor.
 
-<div style="display: inline_block"><br>
-  <a href="mailto:luancyrne@gmail.com">
-  <img align="center"  alt="LuanC-GMAIL" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
-  </a>
-  <a href="https://www.linkedin.com/in/luancyrne/">
-  <img align="center" alt="LuanC-Linkedin"  src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
-  </a>
-  <a href="https://discordapp.com/users/Luancv#0877">
-  <img align="center" alt="LuanC-DC"   src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white">
-</div>
-  </a>
-  
-  
-  
+Especializado em **Node.js**, APIs escaláveis (**REST/GraphQL**), **Kafka** (event-driven), integrações complexas e ambientes de alta escala. Atuei em projetos para **BB Seguros**, **Autopass Top+** e **Caixa Econômica Federal**, sempre focando em estabilidade, performance e entregas contínuas.
 
-### Current situation:
-```javascript
-import Current from "Job";
+**Destaques:**
+- **14+ projetos** entregues (APIs, web, mobile, dashboards)
+- Soluções de impacto para grandes empresas
+- Jornada: suporte → engenharia → produção real
 
-var Company = 'undefined';
-var Occupation = "Systems Analyst";
+Atualmente focado em backends resilientes, processamento assíncrono e arquitetura event-driven.
 
-Current.Startjob(Company, Occupation, "Freelancer");
-```
+## 🌊 Comunidade
 
+Um dos fundadores e administrador da **[MantisCode - Guia de Sistemas](https://discord.gg/mNxWkSNt)** no Discord, com **+600 membros** ativos. Espaço dedicado a devs brasileiros para compartilhar conhecimento, code reviews, mentorias, lives e networking.
+
+Convite aberto: https://discord.gg/mNxWkSNt 💙  
+(Junte-se para trocar ideias e crescer na tecnologia!)
+
+---
+
+## 🏢 Empresas & Clientes Atendidos
+
+- **CNX Telecom** (Abr 2025 – Out 2025 | Remoto - PJ)  
+  App mobile completo (React Native + Node.js), APIs REST, site institucional (React + Strapi), dashboards e pipeline de produção.
+
+- **Minu.co** (Mar 2023 – Mar 2025 | Remoto)  
+  BB Seguros (portal Next.js + Auth0), Autopass Top+ (Kafka + GraphQL), Caixa Econômica Federal (MVP bancário).
+
+- **Talent Group** (Set 2022 – Dez 2022 | Remoto)  
+  Interfaces Nuxt.js, hotfixes e manutenção de design system.
+
+- **CNX Telecom** (Ago 2019 – Set 2022 | Presencial)  
+  Chat multiatendimento (React + Socket.io), mídia indoor real-time (+29 filiais) e automações internas.
+
+- **Medicamental** (Mar 2018 – Jul 2019 | Presencial)  
+  Automação logística com Excel/VBA (início na tecnologia).
+
+---
+
+## 🚀 Projetos em Destaque
+
+- App Mobile Telecom → React Native + Node.js (do zero à App Store)  
+- Portal BB Seguros → Next.js + Strapi + Auth0 + AWS S3  
+- Plataforma Autopass Top+ → Node.js + Kafka + MongoDB + GraphQL + Mocha/Sinon  
+- Clube Caixa MVP → REST/GraphQL + mensageria bancária  
+- Chat Interno → React + Node.js + PostgreSQL + Socket.io  
+- Mídia Indoor Real-Time → Node.js + React + MongoDB + WebSockets (29+ filiais)
+
+---
+
+## 🌟 Repositórios em Destaque
+
+- **[librelinkup-api](https://github.com/luancyrne/librelinkup-api)** 💙  
+  Wrapper Node.js para API LibreLinkUp (monitoramento de glicose). Techs: Node.js, Axios, Jest.
+
+- **[btc-finder](https://github.com/lmajowka/btc-finder)** (Contribuidor)  
+  Código educacional brute-force Bitcoin. JS + Docker (+100 stars).
+
+- **[btcgo](https://github.com/lmajowka/btcgo)** (Contribuidor)  
+  Versão otimizada em Go + paralelismo (+80 stars).
+
+---
+
+## 🛠️ Tech Stack
+
+### Languages & Frameworks
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
+![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00C58E?style=for-the-badge&logo=nuxt.js&logoColor=white)
+
+### Databases
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+
+### APIs & Architecture
+![RESTful](https://img.shields.io/badge/RESTful-005C84?style=for-the-badge&logo=rest&logoColor=white)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
+![Kafka](https://img.shields.io/badge/Apache%20Kafka-000000?style=for-the-badge&logo=apachekafka&logoColor=white)
+![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=websockets&logoColor=white)
+![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socket.io&logoColor=white)
+![BFF](https://img.shields.io/badge/BFF-0d6efd?style=for-the-badge&logoColor=white)
+![Clean Architecture](https://img.shields.io/badge/Clean%20Architecture-0d6efd?style=for-the-badge&logoColor=white)
+![DDD](https://img.shields.io/badge/DDD-0d6efd?style=for-the-badge&logoColor=white)
+
+### Testing & Security
+![Mocha](https://img.shields.io/badge/Mocha-8D6748?style=for-the-badge&logo=mocha&logoColor=white)
+![Sinon](https://img.shields.io/badge/Sinon-323330?style=for-the-badge&logo=sinon&logoColor=white)
+![Auth0](https://img.shields.io/badge/Auth0-EB5424?style=for-the-badge&logo=auth0&logoColor=white)
+![OAuth2](https://img.shields.io/badge/OAuth2-000000?style=for-the-badge&logo=oauth&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+
+### DevOps & Cloud
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![AWS S3](https://img.shields.io/badge/AWS%20S3-569A31?style=for-the-badge&logo=amazon-s3&logoColor=white)
+![AWS ECS](https://img.shields.io/badge/AWS%20ECS-FF9900?style=for-the-badge&logo=amazon-ecs&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+### Frontend
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Material UI](https://img.shields.io/badge/Material%20UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)
+![Shadcn](https://img.shields.io/badge/Shadcn-000000?style=for-the-badge&logo=shadcn&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+
+---
+
+## 🎓 Formação & Certificados
+
+- Ciência da Computação – Estácio de Sá  
+- Desenvolvimento Web – Google Activate  
+- Tecnologia da Informação e Comunicação – SENAI GO  
+- Lógica de Programação – SENAI GO  
+- Reparador e Montador de Computadores – SENAI GO  
+
+## 🌍 Idiomas
+
+- Português: Nativo  
+- Espanhol: Avançado  
+- Inglês: Intermediário  
+
+---
+
+Vamos construir algo incrível juntos? 🚀💙  
+Me chama no LinkedIn, e-mail ou no Discord da comunidade!
