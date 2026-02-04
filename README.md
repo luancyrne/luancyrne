@@ -1,4 +1,4 @@
-![Azul Header](https://placehold.co/800x120/0d6efd/ffffff/png?text=Luan+Cyrne+Vilela+-+Backend+Developer&font=roboto)
+![Azul Header](https://placehold.co/800x120/0d6efd/ffffff/png?text=Luan+Cyrne+Vilela+-+Fullstack+Developer&font=roboto)
 
 **Backend Developer** | Node.js | APIs (REST/GraphQL) | Kafka & Event-Driven | PostgreSQL/MongoDB | Testes (Mocha/Sinon)
 
