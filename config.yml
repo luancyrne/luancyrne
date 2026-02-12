@@ -68,12 +68,12 @@ galaxy_arms:
 #   arm: 0-2                  — Which galaxy arm to associate with (index)
 #   description: "..."        — Short description shown on the card
 projects:
-  - repo: "galaxy-dev/nebula-ui"
+  - repo: "luancyrne/librelinkup-api"
     arm: 0
-    description: "A component library with cosmic design tokens and dark-first theming."
-  - repo: "galaxy-dev/stargate-api"
+    description: "Node.js API wrapper for LibreLinkUp glucose monitoring"
+  - repo: "luancyrne/btc-finder"
     arm: 1
-    description: "High-performance API gateway with built-in observability and caching."
+    description: "Naive code to find bitcoins, for educational purposes"
 
 # Theme color overrides (optional — defaults to deep space palette)
 # All values must be valid hex color codes (#RRGGBB)
