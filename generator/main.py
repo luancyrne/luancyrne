@@ -70,6 +70,10 @@ def generate(args):
     else:
         # Fetch GitHub data
         api = GitHubAPI(username)
+        if not api.token:
+            logger.warning(
+                "GITHUB_TOKEN is not set; only public GitHub data will be included."
+            )
 
         logger.info("Fetching stats...")
         try:

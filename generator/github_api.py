@@ -62,7 +62,7 @@ class GitHubAPI:
     def _fetch_stats_graphql(self) -> dict:
         """Fetch stats via GraphQL for accurate counts including private contributions."""
         query = """
-        query($username: String!) {
+        query($username: String!, $repoCursor: String) {
           user(login: $username) {
             repositoriesContributedTo(contributionTypes: [COMMIT, PULL_REQUEST, ISSUE]) {
               totalCount
@@ -73,8 +73,16 @@ class GitHubAPI:
             issues {
               totalCount
             }
-            repositories(ownerAffiliations: OWNER, first: 100) {
+            repositories(
+              ownerAffiliations: OWNER
+              first: 100
+              after: $repoCursor
+            ) {
               totalCount
+              pageInfo {
+                hasNextPage
+                endCursor
+              }
               nodes {
                 stargazerCount
               }
@@ -86,43 +94,63 @@ class GitHubAPI:
           }
         }
         """
-        try:
-            resp = self._request(
-                "POST",
-                self.GRAPHQL_URL,
-                json={"query": query, "variables": {"username": self.username}},
-            )
-            resp.raise_for_status()
-        except requests.exceptions.Timeout:
-            logger.warning("GraphQL request timed out, falling back to REST.")
-            return self._fetch_stats_rest()
-        except requests.exceptions.HTTPError as e:
-            logger.warning("GraphQL HTTP error (%s), falling back to REST.", e)
-            return self._fetch_stats_rest()
+        repo_cursor = None
+        total_stars = 0
+        stats = None
 
-        data = resp.json()
+        while True:
+            try:
+                resp = self._request(
+                    "POST",
+                    self.GRAPHQL_URL,
+                    json={
+                        "query": query,
+                        "variables": {
+                            "username": self.username,
+                            "repoCursor": repo_cursor,
+                        },
+                    },
+                )
+                resp.raise_for_status()
+            except requests.exceptions.Timeout:
+                logger.warning("GraphQL request timed out, falling back to REST.")
+                return self._fetch_stats_rest()
+            except requests.exceptions.HTTPError as e:
+                logger.warning("GraphQL HTTP error (%s), falling back to REST.", e)
+                return self._fetch_stats_rest()
 
-        if "errors" in data:
-            logger.warning("GraphQL errors: %s", data["errors"])
-            return self._fetch_stats_rest()
+            data = resp.json()
+            if "errors" in data:
+                logger.warning("GraphQL errors: %s", data["errors"])
+                return self._fetch_stats_rest()
 
-        user = data["data"]["user"]
-        contrib = user["contributionsCollection"]
-        repos = user["repositories"]
+            user = data["data"]["user"]
+            if user is None:
+                raise ValueError(f"GitHub user not found: {self.username}")
 
-        total_stars = sum(n["stargazerCount"] for n in repos["nodes"])
-        total_commits = (
-            contrib["totalCommitContributions"]
-            + contrib["restrictedContributionsCount"]
-        )
+            contrib = user["contributionsCollection"]
+            repos = user["repositories"]
+            total_stars += sum(n["stargazerCount"] for n in repos["nodes"])
 
-        return {
-            "commits": total_commits,
-            "stars": total_stars,
-            "prs": user["pullRequests"]["totalCount"],
-            "issues": user["issues"]["totalCount"],
-            "repos": repos["totalCount"],
-        }
+            if stats is None:
+                stats = {
+                    "commits": (
+                        contrib["totalCommitContributions"]
+                        + contrib["restrictedContributionsCount"]
+                    ),
+                    "stars": 0,
+                    "prs": user["pullRequests"]["totalCount"],
+                    "issues": user["issues"]["totalCount"],
+                    "repos": repos["totalCount"],
+                }
+
+            page_info = repos["pageInfo"]
+            if not page_info["hasNextPage"]:
+                break
+            repo_cursor = page_info["endCursor"]
+
+        stats["stars"] = total_stars
+        return stats
 
     def _fetch_stats_rest(self) -> dict:
         """Fallback: fetch stats via REST API (public data only)."""
@@ -200,6 +228,94 @@ class GitHubAPI:
 
     def fetch_languages(self) -> dict:
         """Fetch language byte counts aggregated across all owned non-fork repos."""
+        if self.token:
+            return self._fetch_languages_graphql()
+
+        return self._fetch_languages_rest()
+
+    def _fetch_languages_graphql(self) -> dict:
+        """Aggregate languages from every owned repository visible to the token."""
+        query = """
+        query($username: String!, $repoCursor: String) {
+          user(login: $username) {
+            repositories(
+              ownerAffiliations: OWNER
+              first: 100
+              after: $repoCursor
+            ) {
+              pageInfo {
+                hasNextPage
+                endCursor
+              }
+              nodes {
+                isFork
+                languages(first: 100) {
+                  edges {
+                    size
+                    node {
+                      name
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        """
+        languages = {}
+        repo_cursor = None
+
+        while True:
+            try:
+                resp = self._request(
+                    "POST",
+                    self.GRAPHQL_URL,
+                    json={
+                        "query": query,
+                        "variables": {
+                            "username": self.username,
+                            "repoCursor": repo_cursor,
+                        },
+                    },
+                )
+                resp.raise_for_status()
+            except requests.exceptions.RequestException as e:
+                logger.warning(
+                    "Could not fetch private languages via GraphQL (%s); "
+                    "falling back to public repositories.",
+                    e,
+                )
+                return self._fetch_languages_rest()
+
+            data = resp.json()
+            if "errors" in data:
+                logger.warning(
+                    "GraphQL language errors (%s); falling back to public repositories.",
+                    data["errors"],
+                )
+                return self._fetch_languages_rest()
+
+            user = data["data"]["user"]
+            if user is None:
+                raise ValueError(f"GitHub user not found: {self.username}")
+
+            repos = user["repositories"]
+            for repo in repos["nodes"]:
+                if repo["isFork"]:
+                    continue
+                for edge in repo["languages"]["edges"]:
+                    name = edge["node"]["name"]
+                    languages[name] = languages.get(name, 0) + edge["size"]
+
+            page_info = repos["pageInfo"]
+            if not page_info["hasNextPage"]:
+                break
+            repo_cursor = page_info["endCursor"]
+
+        return languages
+
+    def _fetch_languages_rest(self) -> dict:
+        """Aggregate languages from public repositories via REST."""
         languages = {}
         for repos in self._paginate_repos():
             for repo in repos:
